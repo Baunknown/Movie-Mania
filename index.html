@@ -66,25 +66,51 @@
         }
     </style>
 </head>
-   <!-- Default Statcounter code for movie Mania Update
-https://baunknown.github.io/Movie-Mania/ -->
+  <!-- Default Statcounter code for Movie Mania Update -->
 <script type="text/javascript">
-var sc_project=13012645; 
-var sc_invisible=1; 
-var sc_security="3c26c857"; 
+    // Function to check if the current user should see the Statcounter code
+    function showStatCounter() {
+        // Check for a specific URL parameter (e.g., ?admin=true) or a specific cookie
+        const urlParams = new URLSearchParams(window.location.search);
+        const isAdmin = urlParams.get('admin') === 'true';
+        
+        // Alternatively, you can check for a cookie
+        // const isAdmin = document.cookie.includes('admin=true');
+
+        if (isAdmin) {
+            var sc_project = 13012645; 
+            var sc_invisible = 1; 
+            var sc_security = "3c26c857"; 
+
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://www.statcounter.com/counter/counter.js';
+            script.async = true;
+            document.head.appendChild(script);
+            
+            var noscript = document.createElement('noscript');
+            var div = document.createElement('div');
+            div.className = 'statcounter';
+            var a = document.createElement('a');
+            a.title = 'Web Analytics Made Easy - Statcounter';
+            a.href = 'https://statcounter.com/';
+            a.target = '_blank';
+            var img = document.createElement('img');
+            img.className = 'statcounter';
+            img.src = 'https://c.statcounter.com/13012645/0/3c26c857/1/';
+            img.alt = 'Web Analytics Made Easy - Statcounter';
+            img.referrerPolicy = 'no-referrer-when-downgrade';
+            a.appendChild(img);
+            div.appendChild(a);
+            noscript.appendChild(div);
+            document.body.appendChild(noscript);
+        }
+    }
+
+    showStatCounter();
 </script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<noscript><div class="statcounter"><a title="Web Analytics
-Made Easy - Statcounter" href="https://statcounter.com/"
-target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/13012645/0/3c26c857/1/"
-alt="Web Analytics Made Easy - Statcounter"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 <!-- End of Statcounter Code -->
-<a href="https://statcounter.com/p13012645/?guest=1">View My
-Stats</a>
+<a href="https://statcounter.com/p13012645/?guest=1">View My Stats</a>
 <a href="https://statcounter.com/p13012645/?guest=1" style="display: none;"></a>
 
 <body> 
